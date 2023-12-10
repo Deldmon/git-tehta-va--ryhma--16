@@ -14,11 +14,19 @@ public class Tehtava {
 
 class Tietokone{
 	
-	String merkki = "Acer";
-	String malli = "FQZ71D";
+	String merkki, malli;
+
 	private int muisti =0;
 	boolean paalla = true;
 	
+	public Tietokone() {
+		merkki = "Acer";
+		malli = "FQZ71D";
+	}
+	public Tietokone (String merkki, String malli) {
+		this.merkki = merkki;
+		this.malli = malli;
+	}
 	public int getMuisti() {
 		return muisti;
 	}
